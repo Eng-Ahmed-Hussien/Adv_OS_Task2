@@ -33,8 +33,9 @@ void fcfs(int *req, int n, int head) {
         total += move;
         current = req[i];
     }
-    printf("Total head movement = %ld\n", total);
-    printf("Average movement per request = %.2f\n", (double)total / n);
+    printf("\n-----------------------------------------------------------------\n");
+    printf("    Total head movement = %ld\n", total);
+    printf("    Average movement per request = %.2f\n", (double)total / n);
 }
 
 // SCAN algorithm (elevator): go toward 0 first, then to max
@@ -70,8 +71,9 @@ void scan_algo(int *req, int n, int head, int max_index) {
         total += move;
         current = sorted[i];
     }
-    printf("Total head movement = %ld\n", total);
-    printf("Average movement per request = %.2f\n", (double)total / n);
+    printf("\n-----------------------------------------------------------------\n");
+    printf("    Total head movement = %ld\n", total);
+    printf("    Average movement per request = %.2f\n", (double)total / n);
     free(sorted);
 }
 
@@ -111,8 +113,9 @@ void cscan_algo(int *req, int n, int head, int max_index) {
         total += move;
         current = sorted[i];
     }
-    printf("Total head movement = %ld\n", total);
-    printf("Average movement per request = %.2f\n", (double)total / n);
+    printf("\n-----------------------------------------------------------------\n");
+    printf("    Total head movement = %ld\n", total);
+    printf("    Average movement per request = %.2f\n", (double)total / n);
     free(sorted);
 }
 
